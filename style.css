@@ -1,4 +1,154 @@
-html {
-  height: 100%;
-  width: 100%;
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* Basic styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern sans-serif font */
+  line-height: 1.6;
+  background-color: #f9f9f9; /* Light background */
+  color: #333;
+  font-size: 16px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Header styling */
+header {
+  background-color: #4CAF50; /* Green header */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center; /* Centered header content */
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Welcome text styling */
+.welcome-text {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Search bar styling */
+.search-bar {
+  padding: 15px;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 12px;
+  border: 2px solid #4CAF50; /* Green border */
+  border-radius: 25px; /* Rounded border */
+  font-size: 16px;
+  width: 80%; /* Wider input */
+  max-width: 400px;
+}
+
+.search-bar button {
+  padding: 12px 24px;
+  cursor: pointer;
+  background-color: #4CAF50; /* Green button */
+  color: #fff;
+  border: none;
+  border-radius: 25px; /* Rounded border */
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+}
+
+.search-bar button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Flex container styling */
+.flex-container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items */
+}
+
+/* Flex item styling */
+.flex-item {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.flex-item:hover {
+  transform: scale(1.05); /* Slightly expand on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Lighter shadow on hover */
+}
+
+/* Footer styling */
+footer {
+  background-color: #333; /* Dark footer */
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* Home button styling */
+.home-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4CAF50; /* Green button */
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px; /* Rounded border */
+  transition: background 0.3s ease-in-out;
+}
+
+.home-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* About section styling */
+#about {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.custom-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue link */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px; /* Rounded border */
+  margin: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.custom-link:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
+
+
+
+
+
+
+
