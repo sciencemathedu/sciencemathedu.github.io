@@ -92,6 +92,8 @@
 
 
 
+ 
+    
 
     <div class="flex-item" onclick="window.location.href='/paperio2';"">Paperio 2</div>
     
@@ -118,7 +120,13 @@
 
 
 
-    <div class="flex-item" onclick="window.location.href='/snakeio';"">Snake </div>
+    <div class="flex-item" onclick="window.location.href='/slope2';"">Slope 2</div>
+
+
+
+    
+
+    <div class="flex-item" onclick="window.location.href='/snakeio';"">Snake io </div>
     
 
 
@@ -131,6 +139,10 @@
 
 
 
+    <div class="flex-item" onclick="window.location.href='/retrobowlcollege';"">Retro Bowl College</div>
+    
+
+    
     <div class="flex-item" onclick="window.location.href='/subwaysurfersbali';"">Subway Surfers</div>
 
 
@@ -276,10 +288,86 @@
 
 
 
+    <div class="flex-item" onclick="window.location.href='/rocketleague';"">Rocket League</div>
 
-     
+
+
+     <div class="flex-item" onclick="window.location.href='/rooftopsnipers2';"">Rooftop Snipers 2</div>
+    
+
+
+    <div class="flex-item" onclick="window.location.href='/skibiditoilet';"">Skibidi Toilet</div>
+
+
+
+
+
+    <div class="flex-item" onclick="window.location.href='/snow';"">Snowball Fight</div>
+
+
 
     
+    <div class="flex-item" onclick="window.location.href='/snowrider3d';"">Snow Rider 3d</div>
+    
+
+
+    <div class="flex-item" onclick="window.location.href='/space';"">Space Bar Clicker</div>
+    
+
+
+    <div class="flex-item" onclick="window.location.href='/spankthemonkey';"">Spank The Monkey</div>
+
+
+
+
+     <div class="flex-item" onclick="window.location.href='/stack';"">Stack</div>
+
+
+
+     <div class="flex-item" onclick="window.location.href='/sprinter';"">Sprinter</div>
+
+
+
+
+    <div class="flex-item" onclick="window.location.href='/stealingthediamond';"">Stealing the Diamond</div>
+
+
+
+    <div class="flex-item" onclick="window.location.href='/stickman-hook';"">Stickman Hook</div>
+
+
+
+     <div class="flex-item" onclick="window.location.href='/templerun2';"">Temple Run 2</div>
+
+
+
+    <div class="flex-item" onclick="window.location.href='/tetris';"">Tetris</div>
+
+
+
+
+    <div class="flex-item" onclick="window.location.href='/theimpossiblequiz';"">The Impossible Quiz</div>
+
+    
+
+    <div class="flex-item" onclick="window.location.href='/tinyfishing';"">Tiny Fishing</div>
+
+
+
+
+    
+     <div class="flex-item" onclick="window.location.href='/tube-jumpers';"">Tube Jumpers</div>
+
+
+
+   
+    <div class="flex-item" onclick="window.location.href='/worldhardestgame2';"">World Hardest Game 2</div>
+
+
+    
+   
+
+
     
     
 </div>
@@ -302,3 +390,39 @@
 <footer>
   <p>An Evan Yadegari Production</p>
 </footer>
+
+
+
+
+
+
+</footer>
+
+<div class="search-container">
+  <input type="text" placeholder="Search.." name="search" id="search-bar">
+  <button type="button" onclick="searchGames()">Search</button>
+</div>
+
+<script>
+function searchGames() {
+  let searchQuery = document.getElementById("search-bar").value.toLowerCase();
+  let gameItems = document.getElementsByClassName("flex-item");
+  
+  for (let i = 0; i < gameItems.length; i++) {
+    let gameTitle = gameItems[i].innerText.toLowerCase();
+    if (!gameTitle.includes(searchQuery)) {
+      gameItems[i].style.display = "none";
+    } else {
+      gameItems[i].style.display = "block";
+    }
+  }
+}
+</script>
+
+<script src="sg.min.js"></script>
+
+
+
+
+
+
